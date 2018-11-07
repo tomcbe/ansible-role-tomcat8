@@ -1,10 +1,8 @@
 ---
 - name: Ensure Tomcat8 packages are installed (RedHat).
   yum:
-    name: "{{ item }}"
-    state: installed
-  with_items:
-    - tomcat8
+    name: [u'tomcat8']
+    state: present
   when: ansible_os_family == 'RedHat'
 
 - name: Update apt cache (Debian).
@@ -15,11 +13,8 @@
 
 - name: Ensure Tomcat8 is installed (Debian).
   apt:
-    name: "{{ item }}"
-    state: installed
-  with_items:
-    - tomcat8
-    - tomcat8-admin
+    name: [u'tomcat8', u'tomcat8-admin']
+    state: present
   when: ansible_os_family == 'Debian'
 
 - name: Copy tomcat8 server.xml.
