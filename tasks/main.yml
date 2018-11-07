@@ -1,7 +1,7 @@
 ---
 - name: Ensure Tomcat8 packages are installed (RedHat).
   yum:
-    name: [u'tomcat8']
+    name: ['tomcat8']
     state: present
   when: ansible_os_family == 'RedHat'
 
@@ -13,7 +13,7 @@
 
 - name: Ensure Tomcat8 is installed (Debian).
   apt:
-    name: [u'tomcat8', u'tomcat8-admin']
+    name: ['tomcat8', 'tomcat8-admin']
     state: present
   when: ansible_os_family == 'Debian'
 
