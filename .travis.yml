@@ -36,7 +36,7 @@ script:
     || (echo 'Idempotence test: fail' && exit 1)
 
   # Debugging.
-  - sudo cat /var/log/tomcat6/catalina.out
+  - sudo cat /var/log/tomcat8/catalina.out
   - sudo netstat -plunt
 
 notifications:

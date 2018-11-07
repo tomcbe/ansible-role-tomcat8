@@ -4,7 +4,7 @@ dependencies:
 
 galaxy_info:
   author: geerlingguy
-  description: Tomcat 6 for RHEL/CentOS and Debian/Ubuntu.
+  description: Tomcat 8 for RHEL/CentOS and Debian/Ubuntu.
   company: "Midwestern Mac, LLC"
   license: "license (BSD, MIT)"
   min_ansible_version: 1.8

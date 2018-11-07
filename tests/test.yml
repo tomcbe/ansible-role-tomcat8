@@ -3,7 +3,7 @@
   remote_user: root
   vars:
     java_packages:
-      - openjdk-6-jdk
+      - openjdk-8-jdk
   roles:
     - geerlingguy.java
-    - { role: ansible-role-tomcat6, tomcat6_enabled: false }
+    - { role: ansible-role-tomcat8, tomcat8_enabled: false }
