@@ -19,7 +19,7 @@
 
 - name: copy tomcat defaults file
   template:
-    src: 'tomcat-defaults.j2'
+    src: 'tomcat8-defaults.j2'
     dest: '/etc/default/tomcat8'
     backup: yes
     owner: root
