@@ -9,4 +9,4 @@ tomcat8_maximum_heap_size: 2048m
 tomcat8_java_opts: "-Djava.awt.headless=true -Xmx128m"
 tomcat8_catalina_opts: "-server -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:ConcGCThreads=5 -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:MaxMetaspaceSize=512M -Xms{{ tomcat8_minimum_heap_size }} -Xmx{{ tomcat8_maximum_heap_size }}"
 tomcat8_jvm_tmp_path: /tmp/tomcat8-tomcat8-tmp
-
+tomcat8_additional_vars: []
