@@ -25,7 +25,7 @@
     owner: root
     group: root
     mode: 0644
-  notify: Restart Tomcat
+  notify: restart tomcat
 
 - name: Copy tomcat8 server.xml.
   template:
