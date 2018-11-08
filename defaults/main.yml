@@ -4,3 +4,9 @@ tomcat8_hostname: localhost
 tomcat8_server_port: 8005
 tomcat8_catalina_port: 8080
 tomcat8_catalina_redirect_port: 8443
+tomcat8_minimum_heap_size: 1024m
+tomcat8_maximum_heap_size: 2048m
+tomcat8_java_opts: "-Djava.awt.headless=true -Xmx128m"
+tomcat8_catalina_opts: "-server -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:ConcGCThreads=5 -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:MaxMetaspaceSize=512M -Xms{{ tomcat8_minimum_heap_size }} -Xmx{{ tomcat8_maximum_heap_size }}"
+tomcat8_jvm_tmp_path: /tmp/tomcat8-tomcat8-tmp
+
